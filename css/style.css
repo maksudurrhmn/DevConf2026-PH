@@ -1,0 +1,92 @@
+/* Global css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+/* Global Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Primary Button */
+.primary-button {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.primary-button:hover {
+  background-color: #002997;
+}
+
+/* Header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #575757;
+  font-weight: 500;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #0f172a;
+}
+
+/* Hero section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.hero-container {
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+.hero-btn {
+  padding: 24px 48px;
+}
+
+.section-title h2 {
+  font-size: 3.5rem;
+  color: #000102;
+  font-weight: 700;
+}
