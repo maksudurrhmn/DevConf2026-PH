@@ -273,6 +273,10 @@ footer {
   gap: 2rem;
 }
 .footer-bottom a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-bottom a:hover {
+  color: #1d4ed8;
 }
