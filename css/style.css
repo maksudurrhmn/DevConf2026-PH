@@ -51,11 +51,11 @@ nav {
 .nav-links a {
   color: #575757;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s;
   text-decoration: none;
 }
 .nav-links a:hover {
-  color: #0f172a;
+  color: #1d4ed8;
 }
 
 /* Hero section */
@@ -272,10 +272,14 @@ footer {
   align-items: center;
   gap: 2rem;
 }
+.footer-bottom p {
+  font-size: 14px;
+}
 .footer-bottom a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 14px;
 }
 .footer-bottom a:hover {
   color: #1d4ed8;
