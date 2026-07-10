@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* Basics body styles */
 body {
   font-family: 'Inter', sans-serif;
   color: #ffffff;
@@ -85,8 +85,47 @@ nav {
   padding: 24px 48px;
 }
 
+/* Speakers section */
+.speakers-section {
+  padding-block: 3rem;
+}
+
+/* Section title */
 .section-title h2 {
   font-size: 3.5rem;
   color: #000102;
   font-weight: 700;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.speaker-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  color: #000;
+}
+.speaker-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-img img {
+  background-size: cover;
+  width: 100%;
+}
+.card-info {
+  padding: 1.5rem;
+}
+.card-info span {
+  font-size: 0.8rem;
+  color: #2563eb;
+}
+.card-info h3 {
+  font-size: 1.2rem;
+  color: #0d1b2a;
+  padding-block: 0.5rem;
+}
+.card-info p {
+  font-size: 0.8rem;
+  color: #575757;
 }
