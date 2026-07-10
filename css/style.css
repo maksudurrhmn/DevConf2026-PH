@@ -7,8 +7,11 @@
 /* Basics body styles */
 body {
   font-family: 'Inter', sans-serif;
-  color: #ffffff;
+  color: #000;
   background-color: #ffffff;
+}
+section {
+  padding-block: 4rem;
 }
 
 /* Global Container */
@@ -27,7 +30,7 @@ body {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 .primary-button:hover {
   background-color: #002997;
@@ -72,6 +75,7 @@ nav {
   text-align: center;
 }
 .hero-content h1 {
+  color: #fff;
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -86,23 +90,19 @@ nav {
 }
 
 /* Speakers section */
-.speakers-section {
-  padding-block: 3rem;
+.section-title {
+  padding-bottom: 3rem;
 }
-
-/* Section title */
 .section-title h2 {
   font-size: 3.5rem;
   color: #000102;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 3rem;
 }
 .speaker-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.8rem;
-  color: #000;
+  gap: 2rem;
 }
 .speaker-card {
   border: 1px solid #e5e7eb;
@@ -128,4 +128,97 @@ nav {
 .card-info p {
   font-size: 0.8rem;
   color: #575757;
+}
+
+/* Pricing secttion */
+.section-title p {
+  color: #575757;
+  text-align: center;
+  margin-top: 1rem;
+}
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.pricing-card {
+  border: 1px solid #e5e7eb;
+  padding: 3rem;
+  border-radius: 10px;
+}
+.pricing-title {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1.5rem;
+}
+.pricing-title p {
+  font-size: 1rem;
+  color: #888888;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.pricing-title h3 {
+  font-size: 3rem;
+  color: #0d1b2a;
+}
+.pricing-title span {
+  font-size: 0.8rem;
+  color: #888888;
+}
+.pricing-list ul {
+  padding-block: 1rem;
+  line-height: 2;
+  padding-left: 1.5rem;
+}
+.pricing-list ul li {
+  color: #333333;
+  font-size: 14px;
+}
+.pricing-list ul li::marker {
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+.pricing-btn {
+  text-align: center;
+}
+.pricing-card:nth-child(2) {
+  background-color: #0d1b2a;
+}
+.pricing-card:nth-child(2) .pricing-title p {
+  color: #93c5fd;
+}
+.pricing-card:nth-child(2) .pricing-title h3 {
+  color: #fff;
+}
+.pricing-card:nth-child(2) .pricing-title span {
+  color: #fff;
+}
+.pricing-card:nth-child(2) .pricing-list ul li {
+  color: #fff;
+}
+.pricing-card:first-child .primary-button {
+  width: 100%;
+  background: none;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  transition: all 0.3s ease;
+}
+.pricing-card:first-child .primary-button:hover {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+}
+.pricing-card:nth-child(2) .primary-button {
+  width: 100%;
+}
+.pricing-card:last-child .primary-button {
+  width: 100%;
+  background: none;
+  color: #0d1b2a;
+  border: 1px solid #0d1b2a;
+  transition: all 0.3s ease;
+}
+.pricing-card:last-child .primary-button:hover {
+  background-color: #1d4ed8;
+  color: #fff;
+  border: none;
 }
