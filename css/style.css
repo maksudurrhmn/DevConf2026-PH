@@ -1,11 +1,9 @@
-/* Global css */
+/* Global & Base Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-/* Basics styles */
 body {
   font-family: 'Inter', sans-serif;
   color: #000;
@@ -15,18 +13,17 @@ section {
   padding-top: 9rem;
 }
 
-/* Reusable Elements */
-
-/* Container */
+/* Layout Utilities */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Reusable Components */
+
 /* Primary Button */
 .primary-button {
-  /* background-color: #1d4ed8; */
   background-color: #2563eb;
   color: #ffffff;
   padding: 10px 24px;
@@ -40,18 +37,17 @@ section {
   background-color: #002997;
 }
 
-/* Section Title */
-.section-title {
+/* Section Heading */
+.section-heading {
   padding-bottom: 3rem;
 }
-.section-title h2 {
+.section-heading h2 {
   font-size: 3.5rem;
   color: #000102;
   font-weight: 700;
   text-align: center;
 }
-
-.section-title p {
+.section-heading p {
   color: #64748b;
   font-size: 1.1rem;
   max-width: 600px;
@@ -60,7 +56,7 @@ section {
   line-height: 1.5;
 }
 
-/* Header & Navbar*/
+/* Header & Navbar */
 nav {
   display: flex;
   justify-content: space-between;
